@@ -1,0 +1,67 @@
+
+header {
+	display: inline;
+    padding: 1em;
+    color: white;
+    background-color: #085FA5;
+    clear: left;
+    text-align: center;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 3px;
+}
+
+footer {
+    background-color:#085FA5;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+/* ---------- Academic life Table ----------*/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+/* ---------- My Project margins---------- */
+div.margin{
+	margin: 10px;
+}
+
+h3{
+	margin: 10px;
+}
+
+/*----------Home page 2 boxes ---------- */
+div.container {
+    margin: 1px;
+}
+
+div.left, div.right {
+    float: left;
+    padding: 10px;
+}
+
+div.left {
+    background-color:#00008B;
+	margin: 5px;
+}
+
+div.right {
+    background-color: #B8EBEB;
+	border:1px solid grey;
+	word-wrap: break-word;
+	width: 60%;
+	margin: 5px;
+}
+
+
