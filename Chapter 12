@@ -1,0 +1,113 @@
+<DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="nav.css">
+	<title>Chapter 9</title>
+	<script src="W3.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<header>
+		<h1>Tamzin Thompson</h1>
+	</header>
+	
+
+	
+	<ul class="topnav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="personalLife.html">Personal Life</a></li>
+		<li><a href="academicLife.html">Academic Life</a></li>
+		<li><a href="myProjects.html">My projects</a></li>
+		<li><a href="courseContent.html">Course content</a></li>
+		<li><a href="contact.html">Contact Me</a></li>
+		
+	</ul>
+	
+	<b>Elements of software development</b>
+
+<b>Key points/summary:</b>
+<ul>
+<li>S</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+	
+  
+  <b> Adding in binary </b><style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: centre;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>0</th>
+    <th>1</th> 
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <th>0</th> 
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>1</th> 
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>0</th> 
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+    <th>0</th>
+    <th>1</th>
+    <th>0</th>
+  </tr>
+</table>
+
+</body>
+
+<footer>
+Tamzin Thompson Computing Portfolio<br><br>
+North Halifax Grammar School<br>
+Moor Bottom Rd <br>
+Illingworth <br>
+Halifax <br>
+HX2 9SU
+
+</footer>
+
+</html>
