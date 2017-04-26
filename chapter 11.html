@@ -1,6 +1,20 @@
 <DOCTYPE html>
 <html>
+
 <head>
+
+	<style>
+
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	</style>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="nav.css">
@@ -33,24 +47,289 @@
 		<h5>Chapter 11 - Data types <br><br></h5>
 	
 
-		KEY POINTS:
-		<ul>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-			<li> </li>
-		</ul>
-
+        KEY POINTS:
+        <ul>
+            <li> 5 data types: character, string, Boolean, integer and real. </li>
+            <li>All data types are represented in the computer in binary: 0s and 1s </li>
+            <li>Binary is a number system based on 2; the column values are the powers of 2 starting at 2⁰, 2², 2³ etc </li>
+            <li>Denary is our common number system; column values are powers of 10 </li>
+            <li>Integers are represented in binary using powers of 2. Add up the column value where there is a 1 to get denary equivalent </li>
+            <li>To convert from denary divide by 2 repeatedly and write down the remainder at each stage or simply use column headings </li>
+            <li>Two ways to represent -ve numbers; ‘Sign and magnitude’ and ‘Two’s complement’ </li>
+            <li>Sign and Magnitude: MSB is replaced by sign bit, 1 = -ve  0 = +ve.o </li>
+            <li>Split binary into nibbles then into Hex number</li>
+            <li>Divide by 16 to get denary into Hex</li>
+        </ul>
+		
+		<b> Represent positive integers in binary </b><br>
+		
+		
+			<table style="width:100%">
+			  <tr>
+				<th> Type </th>
+				<th> Description </th> 
+				<th> Example </th>
+			  </tr>
+			  <tr>
+				<th> Character</th>
+				<th> Single. Letter, symbol or control code </th> 
+				<th> S, g, 7, & </th>
+			  </tr>
+			  
+			  <tr>
+				<th> String </th>
+				<th> A string of alphanumeric characters </th> 
+				<th> Hat, Fg7tY6, %7&*j </th>
+			  </tr>
+				<tr>
+				<th> Boolean </th>
+				<th> One of 2 values </th> 
+				<th> True or False </th>
+			  </tr>
+				<tr>
+				<th> Integer </th>
+				<th> Whole number values with no decimal part </th> 
+				<th> 6, -12, 9, 143 </th>
+			  </tr>
+				<tr>
+				<th> Real </th>
+				<th> Numbers with decimal or fractional parts </th> 
+				<th> 12.3, -18.63, 3.14 </th>
+			  </tr>
+			</table><br>
+			
+			<b> Representing Text </b>
+			
+			<ul>
+				<li>Agreed method of representing characters </li>
+				<li> ASCII originally based on 8-bit binary pattern using 7 bits plus a single parity bit and could represent 128 seperate characters</li>
+				<li> Extended ASCII set uses 8 bits and can represent 256 characters </li>
+				<li> Unicode was originally a 16-bit restricted code allowing more than 65 000 characters but the restriction has been removed. The original ASCII is still included with the same values. </li>
+			</ul>
+			<br>
+			<b> Boolean data </b>
+			<ul>
+				<li> True or false</li>
+				<li> 1 = True </li>
+				<li> 0 = False </li>
+				<li> Only requires one bit of storage but the values are often stored in one byte for convenience  </li>
+			</ul>
+			<br>
+			<b> Representing positive integers in binary </b><br>	
 	
+			<table style="width:100%">	
+				<tr>
+				<th>128</th>
+				<th>64</th> 
+				<th>32</th>
+				<th>16</th>
+				<th>8</th> 
+				<th>4</th>
+				<th>2</th>
+				<th>1</th> 
+				<th>Denary value = </th>
+			  </tr>
+			  
+			  <tr> 
+				<th>1</th>
+				<th>1</th> 
+				<th>1</th>
+				<th>1</th>
+				<th>1</th> 
+				<th>1</th>
+				<th>1</th>
+				<th>1</th>
+				<th>255</th>
+			  </tr>
+			  
+			  <tr> 
+				<th>0</th>
+				<th>1</th> 
+				<th>0</th>
+				<th>1</th>
+				<th>0</th> 
+				<th>1</th>
+				<th>0</th>
+				<th>1</th>
+				<th>85</th>
+			  </tr>
+			  </table><br>
+			  
+		<b> Representing negative integers in binary: </b><br>
+		<b> Sign and Magnitude: </b><br>
+			<ul>
+				<li> MSB = most significant bit = highest column value is changed into a sign bit column where 1 = negative and 0 = positive </li>
+			</ul>
+			
+			<table>
+			<tr>
+				<th>sign bit</th>
+				<th>64</th> 
+				<th>32</th>
+				<th>16</th>
+				<th>8</th> 
+				<th>4</th>
+				<th>2</th>
+				<th>1</th> 
+				<th>Denary value = </th>
+			  </tr>
+			  
+			  <tr> 
+				<th>1</th>
+				<th>1</th> 
+				<th>1</th>
+				<th>0</th>
+				<th>0</th> 
+				<th>1</th>
+				<th>1</th>
+				<th>1</th>
+				<th>-103</th>
+			  </tr>
+			  
+			  <tr> 
+				<th>0</th>
+				<th>0</th> 
+				<th>0</th>
+				<th>1</th>
+				<th>1</th> 
+				<th>0</th>
+				<th>1</th>
+				<th>1</th>
+				<th>27</th>
+			  </tr>
+			<br>
+			</table>
+			
+		<b> Two's complement </b>
+			<ul>
+				<li>MSB = most significant bit = changed into a negative value </li>
+			</ul>
+			<table>
+				<tr>
+				<th>-128</th>
+				<th>64</th> 
+				<th>32</th>
+				<th>16</th>
+				<th>8</th> 
+				<th>4</th>
+				<th>2</th>
+				<th>1</th> 
+				<th>Denary value = </th>
+			  </tr>
+			  
+			  <tr> 
+				<th>1</th>
+				<th>0</th> 
+				<th>0</th>
+				<th>1</th>
+				<th>1</th> 
+				<th>0</th>
+				<th>0</th>
+				<th>1</th>
+				<th>-103</th>
+			  </tr>
+			  
+			  <tr> 
+				<th>0</th>
+				<th>0</th> 
+				<th>0</th>
+				<th>1</th>
+				<th>1</th> 
+				<th>0</th>
+				<th>0</th>
+				<th>1</th>
+				<th>+27></th>
+			  </tr>
+			</table><br>
+			
+		<b> Hex numbers - including conversions </b>
+			<table>
+				<tr>
+				<th>Denary</th>
+				<th>1</th> 
+				<th>2</th>
+				<th>3</th>
+				<th>4</th> 
+				<th>5</th>
+				<th>6</th>
+				<th>7</th> 
+				<th>8</th>
+				<th>9</th>
+				<th>10</th>
+				<th>11</th>
+				<th>12</th>
+				<th>13</th>
+				<th>14</th>
+				<th>15</th>
+			  </tr>
+			  
+			  <tr> 
+				<th>Hex</th>
+				<th>1</th> 
+				<th>2</th>
+				<th>3</th>
+				<th>4</th> 
+				<th>5</th>
+				<th>6</th>
+				<th>7</th> 
+				<th>8</th>
+				<th>9</th>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+				<th>E</th>
+				<th>F</th>
+
+			  </tr>
+			  
+			  <tr> 
+				<th>Binary</th>
+				<th>0001</th> 
+				<th>0010</th>
+				<th>0011</th>
+				<th>0100</th> 
+				<th>0101</th>
+				<th>0110</th>
+				<th>0111</th> 
+				<th>1000</th>
+				<th>1001</th>
+				<th>1010</th>
+				<th>1011</th>
+				<th>1100</th>
+				<th>1101</th>
+				<th>1110</th>
+				<th>1111</th>
+
+			  </tr>
+			<br>
+			</table>
+						
+						
+				<br>		
+		<b> Hex into denary</b>
+		<table>
+			<tr>
+			<th>4096</th>
+			<th>256</th> 
+			<th>16</th>
+			<th>1</th>
+			<th>Denary value =</th> 
+		  </tr>
+		  
+		  <tr> 
+			<th></th>
+			<th>A</th> 
+			<th>2</th>
+			<th>C</th>
+			<th>(10X256)+(2X16)+(1X12) = 2604</th> 
+		  </tr>
+		</table><br>
  	</div>
 
 </body>
-
+	
+	
 <footer>
 Tamzin Thompson Computing Portfolio<br><br>
 North Halifax Grammar School<br>
